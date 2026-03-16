@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import { ArrowRight, Mail } from "lucide-react";
-import contactImage from "figma:asset/a7003fe9a7ac3036e2e73013baf9e036a884aad3.png";
 
 export function Contact() {
   return (
