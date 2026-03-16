@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import philosophyImage from "figma:asset/86c40b3f217906de0c36e6898841c1d52a42e3d7.png";
 
 export function Philosophy() {
   const principles = [
