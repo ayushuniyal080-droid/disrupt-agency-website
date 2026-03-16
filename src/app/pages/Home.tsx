@@ -1,7 +1,6 @@
 import { Link } from "react-router";
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
-import logo from "figma:asset/e5168fe02a41a56fdcdd6743929bb237315164ad.png";
 import { useState } from "react";
 
 export function Home() {
