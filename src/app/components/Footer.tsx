@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-import logo from "figma:asset/e5168fe02a41a56fdcdd6743929bb237315164ad.png";
 
 export function Footer() {
   return (
