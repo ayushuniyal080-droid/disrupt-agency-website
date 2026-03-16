@@ -1,6 +1,5 @@
 import { Link, useLocation } from "react-router";
 import { motion } from "motion/react";
-import logo from "figma:asset/e5168fe02a41a56fdcdd6743929bb237315164ad.png";
 
 export function Navigation() {
   const location = useLocation();
