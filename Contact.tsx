@@ -1,0 +1,248 @@
+import { motion } from "motion/react";
+import { ArrowRight, Mail } from "lucide-react";
+import contactImage from "figma:asset/a7003fe9a7ac3036e2e73013baf9e036a884aad3.png";
+
+export function Contact() {
+  return (
+    <div className="bg-background">
+      {/* Hero Section */}
+      <section className="py-32 md:py-48">
+        <div className="max-w-[1800px] mx-auto px-8 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 1,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            className="max-w-5xl"
+          >
+            <h1
+              className="text-6xl md:text-8xl lg:text-9xl font-medium mb-8 tracking-tight leading-[0.95]"
+              style={{ fontWeight: 500 }}
+            >
+              Ready to Break
+              <br />
+              <span className="text-primary">the Pattern?</span>
+            </h1>
+            <p
+              className="text-xl md:text-2xl leading-relaxed text-foreground/80 max-w-3xl"
+              style={{ fontWeight: 400 }}
+            >
+              Tell us about your brand and the growth challenge
+              you're facing. Let's engineer a solution that
+              creates market shifts, not marketing noise.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Contact Form & Info */}
+      <section className="pb-32 md:pb-48">
+        <div className="max-w-[1800px] mx-auto px-8 lg:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+            {/* Contact Form */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{
+                duration: 1,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+            >
+              <form action="https://formspree.io/f/xbdzzage" method="POST" className="space-y-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div>
+                    <label className="block text-sm tracking-widest uppercase mb-3 text-foreground/60">
+                      First Name
+                    </label>
+                    <input
+type="text"
+name="firstName"
+className="w-full px-6 py-4 bg-secondary border border-border rounded-lg focus:outline-none focus:border-primary transition-colors"
+placeholder="John"
+/>
+                  </div>
+                  <div>
+                    <label className="block text-sm tracking-widest uppercase mb-3 text-foreground/60">
+                      Last Name
+                    </label>
+                    <input
+type="text"
+name="lastName"
+className="w-full px-6 py-4 bg-secondary border border-border rounded-lg focus:outline-none focus:border-primary transition-colors"
+placeholder="Doe"
+/>
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm tracking-widest uppercase mb-3 text-foreground/60">
+                    Email
+                  </label>
+                  <input
+type="email"
+name="email"
+className="..."
+placeholder="john@company.com"
+/>
+                </div>
+
+                <div>
+                  <label className="block text-sm tracking-widest uppercase mb-3 text-foreground/60">
+                    Company
+                  </label>
+                  <input
+type="text"
+name="company"
+className="..."
+placeholder="Your Company"
+/>
+                </div>
+
+                <div>
+                  <label className="block text-sm tracking-widest uppercase mb-3 text-foreground/60">
+                    Tell us about your challenge
+                  </label>
+                  <textarea
+name="message"
+rows={6}
+className="..."
+placeholder="What growth challenge are you facing?"
+/>
+                </div>
+
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  type="submit"
+                  className="group w-full flex items-center justify-center gap-3 px-10 py-5 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-all"
+                >
+                  <span className="text-lg">
+                    Start the Conversation
+                  </span>
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </motion.button>
+              </form>
+            </motion.div>
+
+            {/* Contact Information */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{
+                duration: 1,
+                delay: 0.2,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="lg:pl-12"
+            >
+              <div className="space-y-12">
+                <div>
+                  <h2
+                    className="text-4xl md:text-5xl font-medium mb-8 tracking-tight"
+                    style={{ fontWeight: 500 }}
+                  >
+                    Get in Touch
+                  </h2>
+                  <p
+                    className="text-lg leading-relaxed text-foreground/70 mb-12"
+                    style={{ fontWeight: 400 }}
+                  >
+                    Whether you're looking to disrupt your
+                    market, rethink your strategy, or drive
+                    measurable growth, we're here to help.
+                  </p>
+                </div>
+
+                <div className="space-y-8">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <div className="text-sm tracking-widest uppercase mb-2 text-foreground/50">
+                        Email
+                      </div>
+                      <a
+                        href="mailto:work.disrupt@gmail.com"
+                        className="text-lg hover:text-primary transition-colors"
+                      >
+                        work.disrupt@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-12">
+                  <h3
+                    className="text-2xl font-medium mb-6 tracking-tight"
+                    style={{ fontWeight: 500 }}
+                  >
+                    What Happens Next?
+                  </h3>
+                  <div
+                    className="space-y-4 text-foreground/70"
+                    style={{ fontWeight: 400 }}
+                  >
+                    <div className="flex gap-3">
+                      <span className="text-primary flex-shrink-0">
+                        01
+                      </span>
+                      <p>
+                        We'll review your inquiry and respond
+                        within 24 hours
+                      </p>
+                    </div>
+                    <div className="flex gap-3">
+                      <span className="text-primary flex-shrink-0">
+                        02
+                      </span>
+                      <p>
+                        Schedule a strategic discovery call to
+                        understand your goals
+                      </p>
+                    </div>
+                    <div className="flex gap-3">
+                      <span className="text-primary flex-shrink-0">
+                        03
+                      </span>
+                      <p>
+                        Present a tailored approach to achieve
+                        your objectives
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Section */}
+      <section className="pb-32">
+        <div className="max-w-[1800px] mx-auto px-8 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{
+              duration: 1,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            className="aspect-[21/9] rounded-2xl overflow-hidden"
+          >
+            <img
+              src={contactImage}
+              alt="Modern office space"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+            />
+          </motion.div>
+        </div>
+      </section>
+    </div>
+  );
+}
