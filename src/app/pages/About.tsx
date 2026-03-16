@@ -1,8 +1,5 @@
 import { motion } from "motion/react";
-import logo from "figma:asset/e5168fe02a41a56fdcdd6743929bb237315164ad.png";
-import chartImage from "figma:asset/6147caf0d4c249abd2108bbbb207b6476e6fb3d3.png";
-import brandsImage from "figma:asset/6519b28043fa2c61595480cbc788ec8f1a9dc742.png";
-import aboutUsImage from "figma:asset/674c18a91619e46536ec2aa70e9ac3d9900faa2f.png";
+
 
 export function About() {
   return (
